@@ -14,7 +14,7 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 --%>
-<%@ page import=" org.superbiz.moviefun.Movie" %>
+<%@ page import=" org.homework.hackernews.Movie" %>
 <%@ page import="javax.naming.InitialContext" %>
 <%@ page import="java.util.Iterator" %>
 <%@ page import="java.util.List" %>
