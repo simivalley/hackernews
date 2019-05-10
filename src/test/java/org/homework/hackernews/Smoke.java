@@ -8,7 +8,7 @@ import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 
-public class SmokeTest {
+public class Smoke {
 
     @Test
     public void smokeTest() {

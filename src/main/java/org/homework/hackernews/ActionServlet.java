@@ -41,100 +41,100 @@ public class ActionServlet extends HttpServlet {
     @Autowired
     private MoviesBean moviesBean;
 
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        process(request, response);
-    }
+//    @Override
+//    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//        process(request, response);
+//    }
+//
+//    @Override
+//    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//        process(request, response);
+//    }
 
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        process(request, response);
-    }
 
-
-    private void process(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String action = request.getParameter("action");
-
-        if ("Add".equals(action)) {
-
-            String title = request.getParameter("title");
-            String director = request.getParameter("director");
-            String genre = request.getParameter("genre");
-            int rating = Integer.parseInt(request.getParameter("rating"));
-            int year = Integer.parseInt(request.getParameter("year"));
-
-            Movie movie = new Movie(title, director, genre, rating, year);
-
-            moviesBean.addMovie(movie);
-            response.sendRedirect("moviefun");
-            return;
-
-        } else if ("Remove".equals(action)) {
-
-            String[] ids = request.getParameterValues("id");
-            for (String id : ids) {
-                moviesBean.deleteMovieId(new Long(id));
-            }
-
-            response.sendRedirect("moviefun");
-            return;
-
-        } else {
-            String key = request.getParameter("key");
-            String field = request.getParameter("field");
-
-            int count = 0;
-
-            if (StringUtils.isEmpty(key) || StringUtils.isEmpty(field)) {
-                count = moviesBean.countAll();
-                key = "";
-                field = "";
-            } else {
-                count = moviesBean.count(field, key);
-            }
-
-            int page = 1;
-
-            try {
-                page = Integer.parseInt(request.getParameter("page"));
-            } catch (Exception e) {
-            }
-
-            int pageCount = (count / PAGE_SIZE);
-            if (pageCount == 0 || count % PAGE_SIZE != 0) {
-                pageCount++;
-            }
-
-            if (page < 1) {
-                page = 1;
-            }
-
-            if (page > pageCount) {
-                page = pageCount;
-            }
-
-            int start = (page - 1) * PAGE_SIZE;
-            List<Movie> range;
-
-            if (StringUtils.isEmpty(key) || StringUtils.isEmpty(field)) {
-                range = moviesBean.findAll(start, PAGE_SIZE);
-            } else {
-                range = moviesBean.findRange(field, key, start, PAGE_SIZE);
-            }
-
-            int end = start + range.size();
-
-            request.setAttribute("count", count);
-            request.setAttribute("start", start + 1);
-            request.setAttribute("end", end);
-            request.setAttribute("page", page);
-            request.setAttribute("pageCount", pageCount);
-            request.setAttribute("movies", range);
-            request.setAttribute("key", key);
-            request.setAttribute("field", field);
-        }
-
-        request.getRequestDispatcher("WEB-INF/moviefun.jsp").forward(request, response);
-    }
+//    private void process(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//        String action = request.getParameter("action");
+//
+//        if ("Add".equals(action)) {
+//
+//            String title = request.getParameter("title");
+//            String director = request.getParameter("director");
+//            String genre = request.getParameter("genre");
+//            int rating = Integer.parseInt(request.getParameter("rating"));
+//            int year = Integer.parseInt(request.getParameter("year"));
+//
+//            Movie movie = new Movie(title, director, genre, rating, year);
+//
+//            moviesBean.addMovie(movie);
+//            response.sendRedirect("moviefun");
+//            return;
+//
+//        } else if ("Remove".equals(action)) {
+//
+//            String[] ids = request.getParameterValues("id");
+//            for (String id : ids) {
+//                moviesBean.deleteMovieId(new Long(id));
+//            }
+//
+//            response.sendRedirect("moviefun");
+//            return;
+//
+//        } else {
+//            String key = request.getParameter("key");
+//            String field = request.getParameter("field");
+//
+//            int count = 0;
+//
+//            if (StringUtils.isEmpty(key) || StringUtils.isEmpty(field)) {
+//                count = moviesBean.countAll();
+//                key = "";
+//                field = "";
+//            } else {
+//                count = moviesBean.count(field, key);
+//            }
+//
+//            int page = 1;
+//
+//            try {
+//                page = Integer.parseInt(request.getParameter("page"));
+//            } catch (Exception e) {
+//            }
+//
+//            int pageCount = (count / PAGE_SIZE);
+//            if (pageCount == 0 || count % PAGE_SIZE != 0) {
+//                pageCount++;
+//            }
+//
+//            if (page < 1) {
+//                page = 1;
+//            }
+//
+//            if (page > pageCount) {
+//                page = pageCount;
+//            }
+//
+//            int start = (page - 1) * PAGE_SIZE;
+//            List<Movie> range;
+//
+//            if (StringUtils.isEmpty(key) || StringUtils.isEmpty(field)) {
+//                range = moviesBean.findAll(start, PAGE_SIZE);
+//            } else {
+//                range = moviesBean.findRange(field, key, start, PAGE_SIZE);
+//            }
+//
+//            int end = start + range.size();
+//
+//            request.setAttribute("count", count);
+//            request.setAttribute("start", start + 1);
+//            request.setAttribute("end", end);
+//            request.setAttribute("page", page);
+//            request.setAttribute("pageCount", pageCount);
+//            request.setAttribute("movies", range);
+//            request.setAttribute("key", key);
+//            request.setAttribute("field", field);
+//        }
+//
+//        request.getRequestDispatcher("WEB-INF/moviefun.jsp").forward(request, response);
+//    }
 
 }
