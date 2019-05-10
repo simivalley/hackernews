@@ -1,10 +1,12 @@
 package org.homework.hackernews;
 
 import org.junit.Test;
+
 import org.springframework.web.client.RestTemplate;
 
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.MatcherAssert.assertThat;
+
 
 public class SmokeTest {
 
