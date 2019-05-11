@@ -72,7 +72,8 @@
     <c:forEach items="${hackernews}" var="newsitem">
       <tr>
         <td><c:out value="${newsitem.title}"/></td>
-        <td><a href=<c:out value="${newsitem.url}"/> ><c:out value="${newsitem.url}"/></a></td>
+        <c:set var="url" value="${newsitem.url}"/>
+        <td><a href=<c:out value="${newsitem.url}"/> >${fn:substringAfter(url, "http://")}</a></td>
       </tr>
     </c:forEach>
     </tbody>
