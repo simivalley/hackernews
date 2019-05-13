@@ -1,11 +1,22 @@
 package org.homework.hackernews.module;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.util.Objects;
 
 public class NewsItem {
     private String id;
     private String title;
     private String url;
+
+    @JsonIgnore
+    private String by;
+
+    @JsonIgnore
+    private int descendants;
+
+    public NewsItem(){}
+
 
     public NewsItem(String id, String title, String url) {
         this.id = id;
@@ -36,6 +47,23 @@ public class NewsItem {
 
     public void setUrl(String url) {
         this.url = url;
+    }
+
+
+    public String getBy() {
+        return by;
+    }
+
+    public void setBy(String by) {
+        this.by = by;
+    }
+
+    public int getDescendants() {
+        return descendants;
+    }
+
+    public void setDescendants(int descendants) {
+        this.descendants = descendants;
     }
 
     @Override
