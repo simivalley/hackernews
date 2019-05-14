@@ -17,7 +17,7 @@ public class HackerNewsControllerTest {
     private HackerNewsController hackerNewsController;
     private TopNewsUpdater topNewsUpdater;
     private NewsServicesLinks newsServicesLinks;
-   
+
 
     @Before
     public void setUp() throws Exception {
@@ -37,9 +37,6 @@ public class HackerNewsControllerTest {
         Map<String, Object> model = new LinkedHashMap<>();
         String expectedStr ="hackerNewsIndex";
 
-//        doReturn(expectedStr)
-//                .when(newsItemsBean).getNewsItems().values().toArray();
-        //model.put ( expectedStr, newsItemsBean.getNewsItems().values().toArray());
 
         String response =  hackerNewsController.index(model);
 
