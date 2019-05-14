@@ -17,8 +17,9 @@ import java.util.StringTokenizer;
 public class TopNewsUpdater {
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
-    private final NewsItemsBean newsItemsBean;
+    private final   NewsItemsBean newsItemsBean;
     private final NewsServicesLinks newsServicesLinks;
+
 
     public TopNewsUpdater(NewsItemsBean newsItemsBean, NewsServicesLinks newsServicesLinks) {
         this.newsItemsBean = newsItemsBean;
