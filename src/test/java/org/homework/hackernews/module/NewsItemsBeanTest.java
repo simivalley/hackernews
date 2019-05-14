@@ -14,6 +14,7 @@ public class NewsItemsBeanTest {
     public void addItem() throws Exception {
         NewsItem testNewsItem = new NewsItem("100", "test news item", "http://www.example.com");
 
+        newsItemsBean.getNewsItems().clear();
         newsItemsBean.addItem(testNewsItem);
 
         int actualSize = newsItemsBean.getNewsItems().size();

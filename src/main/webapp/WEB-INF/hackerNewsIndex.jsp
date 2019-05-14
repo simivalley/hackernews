@@ -69,11 +69,10 @@
     </tr>
     </thead>
     <tbody>
-    <c:forEach items="${hackernews}" var="newsitem">
+    <c:forEach items="${hackernews}" var="newsitem" varStatus="loop">
       <tr>
-        <td><c:out value="${newsitem.title}"/></td>
-        <c:set var="url" value="${newsitem.url}"/>
-        <td><a href=<c:out value="${newsitem.url}"/> >${fn:substringAfter(url, "http://")}</a></td>
+        <td>${loop.index +1 }. <c:out value="${newsitem.title}"/></td>
+        <td><a href=<c:out value="${newsitem.url}"/> ><c:out value="${newsitem.url}"/></a></td
       </tr>
     </c:forEach>
     </tbody>

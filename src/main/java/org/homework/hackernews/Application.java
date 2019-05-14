@@ -21,6 +21,7 @@ public class Application {
 
     @Bean
     NewsServicesLinks newsServicesLinks(@Value("${top.news.service}") String topNewsService) {
+
         return new NewsServicesLinks(topNewsService);
     }
 

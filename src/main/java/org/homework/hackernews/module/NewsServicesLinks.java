@@ -26,10 +26,10 @@ public class NewsServicesLinks {
             throw new IllegalStateException("No TOP_NEWS_SERVICE found", e);
         }
 
-        JsonNode services = root.path(serviceLink);
 
 
-        return services.get(serviceLink).asText();
+
+        return root.get(serviceLink).asText();
 
 
     }

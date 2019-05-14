@@ -11,4 +11,4 @@ spring:
 
 logging.level:
   root: WARN
-  org.homework.hackernews: DEBUG
+  org.homework.hackernews: INFO

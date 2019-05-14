@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4649d7e7-2d6f-44db-a283-7cbebf54cb1c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/NewsServicesLinks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/TopNewsUpdater.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/TopNewsUpdateScheduler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/homework/hackernews/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/homework/hackernews/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/HackerNewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/HackerNewsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/NewsItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/NewsItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/NewsServicesLinks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/NewsServicesLinks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/TopNewsUpdater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/TopNewsUpdater.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/hackerNewsIndex.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/hackerNewsIndex.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/homework/hackernews/HackerNewsSmokeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/homework/hackernews/HackerNewsSmokeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/homework/hackernews/module/NewsItemsBeanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/homework/hackernews/module/NewsItemsBeanTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/HackerNewsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+            <state relative-caret-position="420">
+              <caret line="30" column="29" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/org/homework/hackernews/HackerNewsSmokeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+            <state relative-caret-position="582">
+              <caret line="39" column="65" selection-start-line="39" selection-start-column="65" selection-end-line="39" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,15 +50,49 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/NewsServicesLinks.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.10.RELEASE/spring-beans-5.0.10.RELEASE.jar!/org/springframework/beans/factory/support/ConstructorResolver.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+            <state relative-caret-position="1264">
+              <caret line="566" selection-start-line="566" selection-end-line="566" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/org/homework/hackernews/module/HackerNewsControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/org/homework/hackernews/module/NewsItemsBeanTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#322#323#0" expanded="true" />
-                <element signature="e#370#371#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/hackerNewsIndex.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -65,7 +101,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/org/homework/hackernews/Application.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+            <state relative-caret-position="180">
+              <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -85,63 +121,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/TopNewsUpdater.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="56" column="34" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
+            <state relative-caret-position="181">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/NewsItemsBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/NewsItem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-45">
-              <caret line="15" column="28" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="15" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#794#795#0" expanded="true" />
-                <element signature="e#819#820#0" expanded="true" />
-                <element signature="e#855#856#0" expanded="true" />
-                <element signature="e#883#884#0" expanded="true" />
-                <element signature="e#918#919#0" expanded="true" />
-                <element signature="e#952#953#0" expanded="true" />
-                <element signature="e#1003#1004#0" expanded="true" />
-                <element signature="e#1049#1050#0" expanded="true" />
-                <element signature="e#1060#1061#0" expanded="true" />
-                <element signature="e#1111#1112#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hackernews.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" selection-start-line="10" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="106" column="21" selection-start-line="106" selection-start-column="21" selection-end-line="106" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -160,6 +144,9 @@
       <find>org.superbiz.moviefun</find>
       <find>spring-boot-starter-web</find>
       <find>moviefun</find>
+      <find>error</find>
+      <find>smoke</find>
+      <find>System.out</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -174,20 +161,21 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/setup.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/newsItem.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/homework/hackernews/SmokeTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/homework/hackernews/module/NewsItemsBeanTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/NewsItemsBean.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" />
         <option value="$PROJECT_DIR$/.idea/.name" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/hackerNewsIndex.jsp" />
-        <option value="$PROJECT_DIR$/src/test/java/org/homework/hackernews/HackerNewsSmokeTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.json" />
-        <option value="$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/NewsServicesLinks.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/homework/hackernews/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/HackerNewsController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/TopNewsUpdater.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/NewsItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/NewsServicesLinks.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/TopNewsUpdateScheduler.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/hackerNewsIndex.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/TopNewsUpdater.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/homework/hackernews/HackerNewsSmokeTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/homework/hackernews/Application.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/homework/hackernews/module/NewsItemsBeanTest.java" />
       </list>
     </option>
   </component>
@@ -210,15 +198,25 @@
           <item name="OpenEJB :: Web Examples :: HackerNews" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="OpenEJB :: Web Examples :: HackerNews" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="OpenEJB :: Web Examples :: HackerNews" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Run Configurations" type="21c1f71a:MavenProjectsStructure$RunConfigurationsNode" />
+        </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="600" />
-    <option name="y" value="69" />
-    <option name="width" value="1396" />
-    <option name="height" value="972" />
+    <option name="x" value="76" />
+    <option name="y" value="27" />
+    <option name="width" value="919" />
+    <option name="height" value="993" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -332,6 +330,16 @@
             </path>
             <path>
               <item name="hackernews" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hackernews" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="hackernews" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hackernews" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
             <path>
@@ -349,7 +357,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557770852555" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557786577223" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSON" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
@@ -377,7 +385,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HackerNewsSmokeTest.smokeTest">
+  <component name="RunManager" selected="Maven.hackernews [spring-boot:run]">
     <configuration name="HackerNewsSmokeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hackernews" />
       <extension name="coverage">
@@ -424,7 +432,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NewsItemsBeanTest.deleteAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NewsItemsBeanTest.addItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hackernews" />
       <extension name="coverage">
         <pattern>
@@ -434,16 +442,33 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.homework.hackernews.module" />
       <option name="MAIN_CLASS_NAME" value="org.homework.hackernews.module.NewsItemsBeanTest" />
-      <option name="METHOD_NAME" value="deleteAll" />
+      <option name="METHOD_NAME" value="addItem" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="hackernews [clean]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+    <configuration name="hackernews [spring-boot:run]" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map>
+                <entry key="TOP_NEWS_SERVICE" value="{&quot;top-news-link&quot;: &quot;https://hacker-news.firebaseio.com/v0/topstories.json&quot;, &quot;news-link&quot;: &quot;https://hacker-news.firebaseio.com/v0/item/&quot;}" />
+              </map>
+            </option>
+            <option name="jreName" value="#USE_PROJECT_JDK" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="false" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
         <option name="myRunnerParameters">
           <MavenRunnerParameters>
             <option name="profiles">
@@ -451,7 +476,7 @@
             </option>
             <option name="goals">
               <list>
-                <option value="clean" />
+                <option value="spring-boot:run" />
               </list>
             </option>
             <option name="pomFileName" value="pom.xml" />
@@ -465,13 +490,63 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="hackernews [test]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map>
+                <entry key="TOP_NEWS_SERVICE" value="{&quot;top-news-link&quot;: &quot;https://hacker-news.firebaseio.com/v0/topstories.json&quot;, &quot;news-link&quot;: &quot;https://hacker-news.firebaseio.com/v0/item/&quot;}" />
+              </map>
+            </option>
+            <option name="jreName" value="#USE_PROJECT_JDK" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="false" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="test" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.HackerNewsSmokeTest" />
+      <item itemvalue="JUnit.HackerNewsSmokeTest.smokeTest" />
+      <item itemvalue="JUnit.NewsItemsBeanTest.addItem" />
+      <item itemvalue="JUnit.NewsItemsBeanTest" />
+      <item itemvalue="Maven.hackernews [spring-boot:run]" />
+      <item itemvalue="Maven.hackernews [test]" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HackerNewsSmokeTest.smokeTest" />
-        <item itemvalue="Maven.hackernews [clean]" />
+        <item itemvalue="Maven.hackernews [test]" />
         <item itemvalue="JUnit.HackerNewsSmokeTest" />
+        <item itemvalue="JUnit.HackerNewsSmokeTest.smokeTest" />
         <item itemvalue="JUnit.NewsItemsBeanTest" />
-        <item itemvalue="JUnit.NewsItemsBeanTest.deleteAll" />
+        <item itemvalue="JUnit.NewsItemsBeanTest.addItem" />
       </list>
     </recent_temporary>
   </component>
@@ -489,42 +564,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HackerNewsSmokeTest_smokeTest - 2019.05.10 at 22h 23m 45s.xml">
+    <history-entry file="HackerNewsSmokeTest_smokeTest - 2019.05.13 at 14h 17m 39s.xml">
       <configuration name="HackerNewsSmokeTest.smokeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HackerNewsSmokeTest_smokeTest - 2019.05.10 at 22h 25m 22s.xml">
+    <history-entry file="HackerNewsSmokeTest_smokeTest - 2019.05.13 at 14h 24m 26s.xml">
       <configuration name="HackerNewsSmokeTest.smokeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HackerNewsSmokeTest_smokeTest - 2019.05.10 at 22h 26m 37s.xml">
-      <configuration name="HackerNewsSmokeTest.smokeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HackerNewsSmokeTest_smokeTest - 2019.05.10 at 22h 28m 11s.xml">
-      <configuration name="HackerNewsSmokeTest.smokeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HackerNewsSmokeTest_smokeTest - 2019.05.10 at 22h 32m 22s.xml">
-      <configuration name="HackerNewsSmokeTest.smokeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HackerNewsSmokeTest_smokeTest - 2019.05.10 at 22h 33m 35s.xml">
-      <configuration name="HackerNewsSmokeTest.smokeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HackerNewsSmokeTest_smokeTest - 2019.05.10 at 22h 39m 22s.xml">
-      <configuration name="HackerNewsSmokeTest.smokeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HackerNewsSmokeTest - 2019.05.10 at 22h 40m 06s.xml">
+    <history-entry file="HackerNewsSmokeTest - 2019.05.13 at 14h 24m 40s.xml">
       <configuration name="HackerNewsSmokeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HackerNewsSmokeTest_smokeTest - 2019.05.13 at 08h 19m 21s.xml">
+    <history-entry file="NewsItemsBeanTest_addItem - 2019.05.13 at 14h 27m 32s.xml">
+      <configuration name="NewsItemsBeanTest.addItem" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NewsItemsBeanTest_addItem - 2019.05.13 at 14h 27m 34s.xml">
+      <configuration name="NewsItemsBeanTest.addItem" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NewsItemsBeanTest - 2019.05.13 at 14h 28m 01s.xml">
+      <configuration name="NewsItemsBeanTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HackerNewsSmokeTest_smokeTest - 2019.05.13 at 14h 31m 10s.xml">
       <configuration name="HackerNewsSmokeTest.smokeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HackerNewsSmokeTest_smokeTest - 2019.05.13 at 08h 20m 29s.xml">
-      <configuration name="HackerNewsSmokeTest.smokeTest" configurationId="JUnit" />
+    <history-entry file="HackerNewsSmokeTest - 2019.05.13 at 14h 37m 06s.xml">
+      <configuration name="HackerNewsSmokeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HackerNewsSmokeTest - 2019.05.13 at 14h 43m 25s.xml">
+      <configuration name="HackerNewsSmokeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HackerNewsSmokeTest - 2019.05.13 at 14h 55m 31s.xml">
+      <configuration name="HackerNewsSmokeTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="600" y="69" width="1396" height="972" extended-state="0" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23481481" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6695464" visible="true" weight="0.2274488" />
+      <window_info id="Structure" order="1" sideWeight="0.33045357" side_tool="true" visible="true" weight="0.2274488" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -535,20 +610,20 @@
       <window_info id="Learn" order="9" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32977462" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21589561" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39764202" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36717063" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.22462203" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.29893237" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.29805616" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5004608" side_tool="true" weight="0.32925472" />
       <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.49953917" weight="0.32829374" />
       <window_info anchor="bottom" id="Console" order="10" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32937366" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.34505087" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.15938018" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Key Promoter X" order="6" weight="0.32959446" />
@@ -564,13 +639,37 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/homework/hackernews/module/NewsItemsBeanTest.java</url>
-          <line>31</line>
+          <line>32</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/TopNewsUpdater.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/TopNewsUpdater.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/homework/hackernews/HackerNewsSmokeTest.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/homework/hackernews/module/NewsItemsBeanTest.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/org/homework/hackernews/module/NewsItemsBeanTest.java</url>
-          <line>39</line>
+          <line>40</line>
           <properties class="org.homework.hackernews.module.NewsItemsBeanTest" method="deleteAll">
             <option name="EMULATED" value="true" />
           </properties>
@@ -578,6 +677,11 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="MavenRunConfiguration">
+        <watch expression=" newsItemsBean.getNewsItems().values().toArray()" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/setup.jsp">
@@ -604,31 +708,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/homework/hackernews/module/HackerNewsControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/src.zip!/java/util/Map.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/homework/hackernews/module/NewsItemsBeanTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="26" column="37" selection-start-line="26" selection-start-column="7" selection-end-line="27" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" column="14" selection-start-line="60" selection-start-column="6" selection-end-line="60" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/org/homework/hackernews/Smoke.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -671,13 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/hackerNewsIndex.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="76" column="11" selection-start-line="76" selection-start-column="11" selection-end-line="76" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/homework/hackernews/Movie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -702,13 +775,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="106" column="21" selection-start-line="106" selection-start-column="21" selection-end-line="106" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -716,20 +782,104 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/homework/hackernews/HackerNewsSmokeTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+        <state relative-caret-position="900">
+          <caret line="60" column="14" selection-start-line="60" selection-start-column="6" selection-end-line="60" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/NewsItemsBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/NewsItemsBean.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/NewsItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
+        <state relative-caret-position="570">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/NewsServicesLinks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="106" column="21" selection-start-line="106" selection-start-column="21" selection-end-line="106" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/TopNewsUpdateScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#664#665#0" expanded="true" />
+            <element signature="e#716#717#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/HackerNewsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.10.RELEASE/spring-beans-5.0.10.RELEASE.jar!/org/springframework/beans/factory/support/ConstructorResolver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1264">
+          <caret line="566" selection-start-line="566" selection-end-line="566" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/homework/hackernews/module/HackerNewsControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/homework/hackernews/HackerNewsSmokeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="39" column="65" selection-start-line="39" selection-start-column="65" selection-end-line="39" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -739,66 +889,34 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/org/homework/hackernews/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/HackerNewsController.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/homework/hackernews/module/NewsItemsBeanTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/hackerNewsIndex.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/NewsServicesLinks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-            <element signature="e#370#371#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/NewsItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45">
-          <caret line="15" column="28" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="15" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#794#795#0" expanded="true" />
-            <element signature="e#819#820#0" expanded="true" />
-            <element signature="e#855#856#0" expanded="true" />
-            <element signature="e#883#884#0" expanded="true" />
-            <element signature="e#918#919#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
-            <element signature="e#1003#1004#0" expanded="true" />
-            <element signature="e#1049#1050#0" expanded="true" />
-            <element signature="e#1060#1061#0" expanded="true" />
-            <element signature="e#1111#1112#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="245">
+          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/homework/hackernews/module/TopNewsUpdater.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="56" column="34" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
+        <state relative-caret-position="181">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

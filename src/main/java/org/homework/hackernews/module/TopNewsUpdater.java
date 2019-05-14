@@ -10,6 +10,7 @@ import org.springframework.web.client.RestTemplate;
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Optional;
 import java.util.StringTokenizer;
 
 @Service
@@ -27,13 +28,10 @@ public class TopNewsUpdater {
     public void update() throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
 
-//        String topNewsLink = newsServicesLinks.getServiceLinks("top-news-link");
-//
-//        String newsLink =  newsServicesLinks.getServiceLinks("news-link");
+        String topNewsLink = newsServicesLinks.getServiceLinks("top-news-link");
 
-        String topNewsLink = "https://hacker-news.firebaseio.com/v0/topstories.json";
+        String newsLink =  newsServicesLinks.getServiceLinks("news-link");
 
-        String newsLink = "https://hacker-news.firebaseio.com/v0/item/";
 
 
         RestTemplate restTemplate = new RestTemplate();
@@ -42,22 +40,33 @@ public class TopNewsUpdater {
         List<Integer> topNewsList;
         topNewsList = objectMapper.readValue(response, LinkedList.class).subList(0, 10);
 
-        //logger.debug("topNewsList : "  )
 
-        System.out.println ( "topNewsList " + topNewsList);
+
+        logger.info ("topNewsList " + topNewsList);
 
         newsItemsBean.getNewsItems().clear();
-        for (Integer topNewsId:topNewsList
+        for (Integer topNewsId : topNewsList
         ) {
-            String strTopNewsId= String.valueOf(topNewsId);
-            String newsDetails = restTemplate.getForObject(newsLink+topNewsId+".json", String.class);
+            String strTopNewsId = String.valueOf(topNewsId);
+            String newsDetails = restTemplate.getForObject(newsLink + topNewsId + ".json", String.class);
+            logger.info (" newsDetails :" + newsDetails);
 
-//            JsonNode jsonNode = objectMapper.readTree(newsDetails);
-//            String newsUrl = jsonNode.get("url").asText();
-//            System.out.println(newsUrl);
+            JsonNode jsonNodeTree = objectMapper.readTree(newsDetails);
 
-//            NewsItem newsItem = objectMapper.readValue( newsDetails, NewsItem.class);
-//            newsItemsBean.addItem(newsItem);
+            Optional<JsonNode> newsIdJsonNode = Optional.ofNullable(jsonNodeTree.get("id"));
+            Optional<JsonNode> newsTitleJsonNode = Optional.ofNullable(jsonNodeTree.get("title"));
+            Optional<JsonNode> newsUrlJsonNode = Optional.ofNullable(jsonNodeTree.get("url"));
+            if (!newsUrlJsonNode.isPresent()) {
+                logger.error("Url does not exist");
+            }
+
+            String newsIdStr = newsIdJsonNode.isPresent() ? newsIdJsonNode.get().asText() : "newId is not existed ";
+            String newsTitleStr = newsTitleJsonNode.isPresent() ? newsTitleJsonNode.get().asText() : "newTitle is not existed ";
+            String newsUrlStr = newsUrlJsonNode.isPresent() ? newsUrlJsonNode.get().asText() : "newUrl is not existed ";
+
+
+            NewsItem newsItem = new NewsItem( newsIdStr, newsTitleStr , newsUrlStr);
+            newsItemsBean.addItem(newsItem);
 
         }
 
